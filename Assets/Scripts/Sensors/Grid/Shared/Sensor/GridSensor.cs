@@ -85,6 +85,11 @@ namespace MBaske.Sensors.Grid
             }
         }
 
+        public CompressionSpec GetCompressionSpec()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <inheritdoc/>
         public string GetName()
         {
@@ -116,6 +121,11 @@ namespace MBaske.Sensors.Grid
             }
 
             return m_Bytes.ToArray();
+        }
+
+        public ObservationSpec GetObservationSpec()
+        {
+            throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
